@@ -1,0 +1,29 @@
+{
+  "name": "promise-deep-resolve-ts",
+  "version": "1.0.0",
+  "description": "Helper for resolving very deep promises",
+  "main": "index.js",
+  "scripts": {
+    "transpile": "tsc --project tsconfig.json ",
+    "build": "yarn transpile",
+    "prepare": "yarn build"
+  },
+  "keywords": [
+    "promise",
+    "deep",
+    "resolve",
+    "typescript",
+    "ts"
+  ],
+  "files": [
+    "dist/**/*"
+  ],
+  "author": "Dmitriy Rodin",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "typescript": "^4.5.1-rc"
+  },
+  "devDependencies": {
+    "promise-resolve-deep": "^1.1.1"
+  }
+}
