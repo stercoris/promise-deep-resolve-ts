@@ -5,7 +5,7 @@ export type Resolved<T> = T extends object
   ? { [K in keyof T]: Resolved<Awaited<T[K]>> }
   : Awaited<T>;
 
-export const promiseDeepResolve = async <T>(
+export const promiseDeepResolve = async <T, ReturnType = Resolved<T>>(
   objectWithPromises: T | Promise<T>
-): Promise<Resolved<T>> =>
-  await resolveNestedPromises(await objectWithPromises);
+): Promise<ReturnType> =>
+  await resolveNestedPromises(await objectWithPromises, undefined, -1);
