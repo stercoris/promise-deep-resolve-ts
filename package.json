@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "description": "Helper for resolving very deep promises",
   "main": "dist/index.js",
+  "private": "false",
   "scripts": {
     "transpile": "tsc --project tsconfig.json ",
     "build": "yarn transpile",
