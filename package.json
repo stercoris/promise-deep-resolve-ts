@@ -1,6 +1,6 @@
 {
   "name": "promise-deep-resolve-ts",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Helper for resolving very deep promises",
   "main": "dist/index.js",
   "scripts": {
