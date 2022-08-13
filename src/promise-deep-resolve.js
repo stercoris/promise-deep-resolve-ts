@@ -1,4 +1,4 @@
-// !!! TAKEN FROM https://github.com/Rush/promise-resolve-deep !!!
+// TAKEN FROM https://github.com/Rush/promise-resolve-deep !!!
 
 const promiseMap =
   Promise.map ||
