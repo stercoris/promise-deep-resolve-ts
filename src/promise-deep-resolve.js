@@ -36,7 +36,7 @@ export function resolveNestedPromises(obj, options, maxDepth = 6) {
         (obj) => resolveNestedPromises(obj, options, maxDepth),
         options
       );
-    } else if (obj && typeof obj === "object" && obj.constructor === Object) {
+    } else if (obj && typeof obj === 'object' && obj.constructor === Object) {
       const obj2 = {};
       for (const key in obj) {
         obj2[key] = resolveNestedPromises(obj[key], options, maxDepth);

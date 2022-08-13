@@ -11,6 +11,8 @@
     "allowJs": true,
     "declaration": true,
     "declarationMap": true,
-    "strictPropertyInitialization": false
-  }
+    "strictPropertyInitialization": false,
+    "resolveJsonModule": true
+  },
+  "include": ["src"]
 }

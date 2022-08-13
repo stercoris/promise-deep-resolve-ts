@@ -4,7 +4,7 @@
   "description": "Helper for resolving very deep promises",
   "main": "dist/index.js",
   "scripts": {
-    "transpile": "tsc --project tsconfig.json",
+    "transpile": "tsc --project build.tsconfig.json",
     "build": "yarn transpile",
     "prepare": "yarn build"
   },
@@ -28,6 +28,11 @@
     "typescript": "^4.7.4"
   },
   "devDependencies": {
-    "promise-resolve-deep": "^1.1.1"
+    "@types/jest": "^28.1.6",
+    "jest": "^28.1.3",
+    "prettier": "^2.7.1",
+    "promise-resolve-deep": "^1.1.1",
+    "ts-jest": "^28.0.7",
+    "ts-node": "^10.9.1"
   }
 }
